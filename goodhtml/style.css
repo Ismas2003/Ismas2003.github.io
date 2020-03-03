@@ -1,0 +1,42 @@
+body {
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  div {
+    border: 3em double blue;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background-color: white;
+    width: 15em;
+    height: 15em;
+    animation-name: ha;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-taming-function: linear;
+  }
+  .small{
+    width: 7em;
+    height: 7em;
+    margin-left: 1em;
+  }
+  .x-small{
+    width: 1em;
+    height: 1em;
+     border: 2em double blue;
+    margin-left: 1em;
+  }
+  @keyframes ha{
+      from{}
+      50%{
+          transform:rotate(180deg);
+          }
+      to{
+          transform:rotate(360deg);
+          }
+  }
+  
